@@ -37,8 +37,3 @@ This will open a web-page. Navigate to the `notebooks/` folder. Note that some
 notebooks might take a long time to run (order of hours, not days), or fail if 
 the memory capacity of the machine is insufficient. (All notebooks were run 
 successfully on a MacBook Pro with an M1 chip and 64GB of memory.)  
-
-## Running the Demos
-
-The demos are in the `demos/` folder and provide an interactive visualization of
-some of the data.  The demos can be run in a browser.
