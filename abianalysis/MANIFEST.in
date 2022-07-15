@@ -1,0 +1,3 @@
+include README.rst
+include abianalysis/volume/data/*.npz
+include abianalysis/structures.json
