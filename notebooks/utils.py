@@ -1,6 +1,7 @@
 # Utilities for caching
 from typing import List
 
+import matplotlib.pyplot as plt
 import numpy as np
 from ipywidgets import Dropdown, VBox
 from joblib import Memory
@@ -8,12 +9,9 @@ from matplotlib.cm import get_cmap
 from matplotlib.gridspec import GridSpec
 from pythreejs import Points, BufferGeometry, BufferAttribute, PointsMaterial, \
     PerspectiveCamera, Scene, Renderer, OrbitControls
-from scipy.spatial.distance import pdist
 from sklearn.preprocessing import minmax_scale
-import matplotlib.pyplot as plt
 
-from abianalysis import make_hierarchy
-from abianalysis.hierarchy import Hierarchy
+from abianalysis.hierarchy import make_hierarchy, Hierarchy
 from abianalysis.plot.hierarchy_plotter import HierarchyPlotter
 from abianalysis.volume import AGES, Volume
 from abianalysis.volume.preprocess import match_genes

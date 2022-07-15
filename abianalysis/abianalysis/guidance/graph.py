@@ -21,19 +21,19 @@
 #  SOFTWARE.
 
 from functools import cached_property
-from typing import List, Union, TypeVar, Iterable, Optional
+from typing import List, Union, Iterable, Optional
 
 import igraph
 
-from abianalysis import Hierarchy
 from abianalysis.guidance.axon import Axon
 from abianalysis.guidance.factory import make_guidance_graphs
 from abianalysis.guidance.find_axon import find_axon
+from abianalysis.hierarchy import Hierarchy
 from abianalysis.spatial.graph import VoxelGraph
-from abianalysis.tree.node import SubNode
+from pylineage.node import TreeNode
 
 
-def just_not_leaves(root: SubNode) -> Iterable[SubNode]:
+def just_not_leaves(root: TreeNode) -> Iterable[TreeNode]:
     for n in root.descendants():
         if any(c.is_leaf for c in n.children):
             yield n

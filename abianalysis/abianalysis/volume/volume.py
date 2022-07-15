@@ -34,7 +34,6 @@ from typing import Tuple, List, Dict, Optional, Union, Iterable
 import numpy as np
 
 from abianalysis.anatomy import Anatomy
-from abianalysis.json_dict import to_json_dict
 from .load import load_volume, default_volume_file_name
 from .preprocess import match_genes, shuffle_expression, \
     impute_missing_expression, \
@@ -129,9 +128,6 @@ class Volume:
 
         """
         return VOXEL_SIZES[self.age]
-
-    def to_json_dict(self, include_only=None):
-        return to_json_dict(self, include_only)
 
     def match_genes(self, *volume: 'Volume') -> None:
         """See :py:func:`.match_genes`"""

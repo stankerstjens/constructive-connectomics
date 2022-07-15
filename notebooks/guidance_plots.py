@@ -4,7 +4,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.figure import Figure
 
-from scripts.guidance_experiment import Experiment
+from guidance_experiment import Experiment
 
 
 def distance_vs_path_length_plot(experiment: Experiment,

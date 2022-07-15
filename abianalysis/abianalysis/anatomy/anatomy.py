@@ -32,10 +32,10 @@ import json
 from pathlib import Path
 from typing import Union
 
-from abianalysis.tree import TreeNode
+from pylineage.node import TreeNode
 
 
-class Anatomy(TreeNode['Anatomy']):
+class Anatomy(TreeNode):
     """A tree of anatomical regions, each with a name and id"""
 
     file_name = Path(__file__).parent / 'structures.json'

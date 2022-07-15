@@ -37,7 +37,7 @@ class Cell:
         return self._lineage
 
     @lineage.setter
-    def lineage(self, lineage: TreeNode['Cell']):
+    def lineage(self, lineage: 'TreeNode[TreeNode, Cell]'):
         self._lineage = lineage
         lineage.item = self
 

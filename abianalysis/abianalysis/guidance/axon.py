@@ -21,15 +21,14 @@
 #  SOFTWARE.
 
 from functools import cached_property
-from typing import List, Set, Union, Tuple, Optional
+from typing import List, Optional
 
 import igraph
 import numpy as np
 from scipy.spatial.distance import cdist
 
-from abianalysis.json_dict import to_json_dict
-
-from abianalysis import Hierarchy, Volume
+from abianalysis.hierarchy import Hierarchy
+from abianalysis.volume import Volume
 
 
 def _remove_consecutive_duplicates(ids: List[int]) -> np.ndarray:
@@ -86,9 +85,6 @@ class Axon:
 
         """
         return np.array(self._tree.vs['voxel'])[vertex]
-
-    def to_json_dict(self, include_only=('source', 'voxel_edges'), **kwargs):
-        return to_json_dict(self, include_only=include_only, **kwargs)
 
     @property
     def source(self) -> int:

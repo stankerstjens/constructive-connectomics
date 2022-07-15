@@ -7,7 +7,7 @@ setuptools.setup(
     author="Stan Kerstjens",
     author_email="skerst@ini.ethz.ch",
     description="Package for analysis of ABI data",
-    packages=['abianalysis'],
+    packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires=[
         "tqdm",
@@ -18,5 +18,6 @@ setuptools.setup(
         "requests",
         "igraph",
         "hsluv",
+        "matplotlib"
     ],
 )

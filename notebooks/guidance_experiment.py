@@ -7,13 +7,15 @@ import igraph
 import numpy as np
 from tqdm import tqdm
 
-from abianalysis import Volume, make_balanced_hierarchy, GuidanceGraph, \
-    get_euclidean_distance, get_euclidean_path_length, \
-    voxel_graph_from_volume, Hierarchy, VoxelGraph, Axon
+from abianalysis.guidance import GuidanceGraph, Axon, get_euclidean_path_length, \
+    get_euclidean_distance
 from abianalysis.guidance.factory import correlation_landscape, \
     normalized_weight, threshold_edge_mask
+from abianalysis.hierarchy import Hierarchy
 from abianalysis.hierarchy.decomposition import pca_split, \
-    random_split
+    random_split, make_balanced_hierarchy
+from abianalysis.spatial import VoxelGraph, voxel_graph_from_volume
+from abianalysis.volume import Volume
 from pylineage.multi_lineage_simulator import MultiLineageSimulator
 
 

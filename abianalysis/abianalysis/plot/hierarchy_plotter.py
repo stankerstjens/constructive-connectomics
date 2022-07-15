@@ -28,7 +28,7 @@ from matplotlib.gridspec import GridSpecFromSubplotSpec
 from matplotlib.transforms import ScaledTranslation, blended_transform_factory
 from sklearn.decomposition import PCA
 
-from abianalysis import Hierarchy
+from abianalysis.hierarchy import Hierarchy
 from abianalysis.plot.max_projection import MaxProjection
 from abianalysis.plot.side import Side
 from pylineage.color import TreeColorMap

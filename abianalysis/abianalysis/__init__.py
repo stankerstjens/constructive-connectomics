@@ -20,10 +20,3 @@
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #  SOFTWARE.
 """API Reference for the abianalysis package."""
-
-# noinspection PyUnresolvedReferences
-from .hierarchy import *
-# noinspection PyUnresolvedReferences
-from .volume import *
-from .guidance import *
-from .spatial import *

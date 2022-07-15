@@ -29,7 +29,7 @@ from scipy.spatial.distance import cdist
 from sklearn.preprocessing import minmax_scale
 from tqdm import tqdm
 
-from abianalysis import Hierarchy
+from abianalysis.hierarchy import Hierarchy
 from abianalysis.spatial.graph import VoxelGraph
 
 

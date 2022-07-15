@@ -20,12 +20,12 @@
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #  SOFTWARE.
 import numpy as np
-from pylineage.grid.grid import Grid
 
-from abianalysis.tree import TreeNode
 from pylineage.cell import Cell
 from pylineage.divider import Divider, make_asymmetric_child
 from pylineage.grid.cell_positioner import CellPositioner
+from pylineage.grid.grid import Grid
+from pylineage.node import TreeNode
 from pylineage.simulator import Simulator
 from pylineage.state import State
 

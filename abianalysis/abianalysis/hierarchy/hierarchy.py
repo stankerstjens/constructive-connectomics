@@ -36,9 +36,9 @@ import numpy as np
 from pylineage.node import TreeNode
 
 from abianalysis.volume import Volume
-from abianalysis.json_dict import to_json_dict
 
 T = TypeVar('T')
+
 
 class Hierarchy(TreeNode['Hierarchy', T]):
     """A node in a hierarchy of which the leaves are voxels of the
@@ -132,7 +132,7 @@ class Hierarchy(TreeNode['Hierarchy', T]):
             return node
 
         return _recursive_call(cls(volume=volume), data)
-
+   
     @property
     def n_progenitors(self):
         """The number of interior nodes among the descendants"""

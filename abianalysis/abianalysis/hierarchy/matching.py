@@ -34,11 +34,11 @@ projections of volumes onto hierarchies.
 """
 
 import collections
-from typing import List, Optional, Dict, Tuple
+from typing import List, Optional, Dict
 
 import numpy as np
 
-from abianalysis import Hierarchy
+from abianalysis.hierarchy import Hierarchy
 
 
 def _common_gene_selectors(g1, g2):

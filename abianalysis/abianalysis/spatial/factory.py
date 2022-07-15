@@ -35,8 +35,8 @@ import numpy as np
 from scipy.sparse import lil_matrix
 from scipy.spatial import Delaunay, cKDTree
 
-from abianalysis import Volume
 from abianalysis.spatial.graph import VoxelGraph
+from abianalysis.volume import Volume
 
 EdgeGenerator = Callable[[np.ndarray], Iterable[Tuple[int, int]]]
 

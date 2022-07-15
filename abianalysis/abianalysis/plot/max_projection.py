@@ -4,7 +4,7 @@ import numpy as np
 from attrs import define, field
 from matplotlib.collections import LineCollection
 
-from abianalysis import Hierarchy
+from abianalysis.hierarchy import Hierarchy
 from abianalysis.plot.line import Line
 from abianalysis.plot.point import Point
 from abianalysis.plot.side import Side
